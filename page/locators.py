@@ -3,17 +3,18 @@ class LocatorsMainPage:
     last_name_locator = '//input[@id ="lastName"]'
     email_locator = '//div[@id ="userEmail-wrapper"]//input'
 
-    gender_male_locator = '//input[@id ="gender-radio-1"]/parent::div'
-    gender_female_locator = '//input[@id ="gender-radio-2"]/parent::div'
-    gender_other_locator = '//input[@id ="gender-radio-3"]/parent::div'
+    gender_dict = {
+        'Male': '//input[@id ="gender-radio-1"]/parent::div',
+        'Female': '//input[@id ="gender-radio-2"]/parent::div',
+        'Other': '//input[@id ="gender-radio-3"]/parent::div'}
 
     mobile_num_locator = '//input[@id ="userNumber"]'
     date_of_birch_locator = '//input[@id ="dateOfBirthInput"]'
     subjects_locator = '//input[@id = "subjectsInput"]'
-
-    hobbies_sport_locator = '//input[@id = "hobbies-checkbox-1"]/parent::div'
-    hobbies_reading_locator = '//input[@id = "hobbies-checkbox-2"]/parent::div'
-    hobbies_music_locator = '//input[@id = "hobbies-checkbox-3"]/parent::div'
+    hobbies_dict = {
+                    'Sports':'//input[@id = "hobbies-checkbox-1"]/parent::div',
+                    'Reading': '//input[@id = "hobbies-checkbox-2"]/parent::div',
+                    'Music': '//input[@id = "hobbies-checkbox-3"]/parent::div'}
 
     file_locator = '//input[@id = "uploadPicture"]'
 
