@@ -19,6 +19,10 @@ class TestPage:
         print('by')
         postcondition_function(self.page)
 
+    @allure.title("Test fist/last name")
+    def test_student_name(self):
+        student_name(self.page)
+
     @allure.title("Test mobile")
     @allure.story("Good test")
     def test_mobile(self):
