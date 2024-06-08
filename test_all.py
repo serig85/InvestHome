@@ -1,19 +1,15 @@
 import allure
 import selene
-
 from page.main_page import *
-import allure_pytest
-import pytest
 
-
-page_url = 'https://demoqa.com/automation-practice-form'
+PAGE_URL = 'https://demoqa.com/automation-practice-form'
 
 class TestPage:
+
     def setup_class(self):
         print('hello')
-        self.page = selene.browser.open(page_url)
+        self.page = selene.browser.open(PAGE_URL)
         precondition_function(self.page)
-
 
     def teardown_class(self):
         print('by')
@@ -22,8 +18,6 @@ class TestPage:
     @allure.title("Test fist/last name")
     def test_student_name(self):
         student_name(self.page)
-
-
 
     @allure.title("Test email")
     def test_email(self):
@@ -37,7 +31,6 @@ class TestPage:
     @allure.story("Good test")
     def test_mobile(self):
         mobile(self.page)
-
 
     @allure.title("Bed test")
     def test_mobile_neg(self):
@@ -62,3 +55,7 @@ class TestPage:
     @allure.title("Test current_address")
     def test_current_address(self):
         current_address(self.page)
+
+    @allure.title("Test state and city")
+    def test_state_city(self):
+        state_city(self.page)

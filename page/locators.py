@@ -12,7 +12,7 @@ class LocatorsMainPage:
     date_of_birch_locator = '//input[@id ="dateOfBirthInput"]'
     subjects_locator = '//input[@id = "subjectsInput"]'
     hobbies_dict = {
-                    'Sports':'//input[@id = "hobbies-checkbox-1"]/parent::div',
+                    'Sports': '//input[@id = "hobbies-checkbox-1"]/parent::div',
                     'Reading': '//input[@id = "hobbies-checkbox-2"]/parent::div',
                     'Music': '//input[@id = "hobbies-checkbox-3"]/parent::div'}
 
@@ -22,28 +22,32 @@ class LocatorsMainPage:
 
     select_states_locator = '//div[@id = "state"]'
 
-    state_NCR_locator = '//div[@class =" css-11unzgr"]/div[text() ="NCR"]'
-    state_Uttar_Pradesh_locator = '//div[@class =" css-11unzgr"]/div[text() ="Uttar Pradesh"]'
-    state_Haryana_locator = '//div[@class =" css-11unzgr"]/div[text() ="Haryana"]'
-    state_Rajasthan_locator = '//div[@class =" css-11unzgr"]/div[text() ="Rajasthan"]'
+    state_dict = {
+                'NCR': '//div[@class =" css-11unzgr"]/div[text() ="NCR"]',
+                'Uttar Pradesh': '//div[@class =" css-11unzgr"]/div[text() ="Uttar Pradesh"]',
+                'Haryana': '//div[@class =" css-11unzgr"]/div[text() ="Haryana"]',
+                'Rajasthan': '//div[@class =" css-11unzgr"]/div[text() ="Rajasthan"]'}
 
     select_city_locator = '//div[@id = "city"]'
 
-    city_NCR_Delhi_locator = '//div[@class = " css-11unzgr"]//div[text() ="Delhi"]'
-    city_NCR_Gurgaon_locator = '//div[@class = " css-11unzgr"]//div[text() ="Gurgaon"]'
-    city_NCR_Noida_locator = '//div[@class = " css-11unzgr"]//div[text() ="Noida"]'
-
-    city_Uttar_Pradesh_Agra_locator = '//div[@class = " css-11unzgr"]//div[text() ="Agra"]'
-    city_Uttar_Pradesh_Lucknow_locator = '//div[@class = " css-11unzgr"]//div[text() ="Lucknow"]'
-    city_Uttar_Pradesh_Merrut_locator = '//div[@class = " css-11unzgr"]//div[text() ="Merrut"]'
-
-    city_Haryana_Karnal_locator = '//div[@class = " css-11unzgr"]//div[text() ="Karnal"]'
-    city_Haryana_Panipat_locator = '//div[@class = " css-11unzgr"]//div[text() ="Panipat"]'
-
-    city_Rajasthan_Jaipur_locator = '//div[@class = " css-11unzgr"]//div[text() ="Jaipur"]'
-    city_Rajasthan_Jaiselmer_locator = '//div[@class = " css-11unzgr"]//div[text() ="Jaiselmer"]'
+    city_dict = {
+        # NCR
+        'Delhi': '//div[@class = " css-11unzgr"]//div[text() ="Delhi"]',
+        'Gurgaon': '//div[@class = " css-11unzgr"]//div[text() ="Gurgaon"]',
+        'Noida': '//div[@class = " css-11unzgr"]//div[text() ="Noida"]',
+        # Uttar Pradesh
+        'Agra': '//div[@class = " css-11unzgr"]//div[text() ="Agra"]',
+        'Lucknow': '//div[@class = " css-11unzgr"]//div[text() ="Lucknow"]',
+        'Merrut': '//div[@class = " css-11unzgr"]//div[text() ="Merrut"]',
+        # Haryana
+        'Karnal': '//div[@class = " css-11unzgr"]//div[text() ="Karnal"]',
+        'Panipat': '//div[@class = " css-11unzgr"]//div[text() ="Panipat"]',
+        # Rajasthan
+        'Jaipur': '//div[@class = " css-11unzgr"]//div[text() ="Jaipur"]',
+        'Jaiselmer': '//div[@class = " css-11unzgr"]//div[text() ="Jaiselmer"]'}
 
     submit_locator = '//button[@id = "submit"]'
+
 
 class LocatorPopUpWindows:
     student_name = '//td[text()="Student Name"]/following-sibling::td'
