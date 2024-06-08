@@ -1,0 +1,1 @@
+{"fist_name": "Serg", "last_name": "Sper", "email": "test@test.te", "gender": "Male", "mobile_num": "0123456789", "date_of_birch": "08 Aug 1985", "hobbies": ["Sports", "Music"], "subjects": "subg_text", "file_name": "C:\\code\\InvestHome\\static\\image\\dtjxK5Y9Bt8.jpg", "current_address": "krasniy pahar", "state": "Uttar Pradesh", "city": "Lucknow"}
